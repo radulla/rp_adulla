@@ -11,6 +11,7 @@
 
 .body{
     background-color: rgb(88, 89, 92);
+    width:100%;
 }
 
 .center{
@@ -63,7 +64,7 @@
     display: inline-block;
     position: relative;
     /*color: #0087ca;*/
-  }
+}
   
 .hover-underline-animation:after {
     content: '';
