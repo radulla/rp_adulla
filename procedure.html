@@ -15,6 +15,7 @@
 </head>
 <body class="body">
     <div class="container-lg">
+
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
             <!-- lg = large breakpoint, navbar-dark = make the text light -->
@@ -46,81 +47,84 @@
             </div>
         </nav>
 
-        <!-- Procedure -->
+        <!-- Procedure Header -->
         <section class="header">
             <div class="container">
                 <br>
                 <h1 class="text-light text-center display-4">Procedure</h1>
                 <br>
-        </section>
-        <section class="body-bg">
-                <table class="table table-hover text-center table-light table-bordered border-dark-subtle">  
-                    <thead>
-                        <tr class="table-primary">
-                            <th><h3>Step</h3></th>
-                            <th><h3>Description</h3></th>
-                            <th><h3>Image</h3></th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-group-divider">
-                        <tr class="align-middle">
-                            <th scope="row" class="table-secondary">
-                                <h3>1</h3>
-                            </th> <!-- scope="row" specifies a row header cell -->
-                            <td><h3 class="howTo">Download dataset from Kaggle and python libraries into Google Colab.</h3></td>
-                            <td class="text-center"><img src="img/colab-icon.png" alt="Google Colab" class="procedure-img"></td>                           
-                        </tr>
-                        
-                        <tr class="align-middle">
-                            <th scope="row" class="table-secondary">
-                                <h3>2</h3>
-                            </th>
-                            <td><h3 class="howTo">Load data as CSV (comma separated value) from Excel and modify columns.</h3></td>
-                            <td class="text-center"><img src="img/excel-icon.png" alt="Microsoft Excel" class="procedure-img"></td>
-                        </tr>
-
-                        <tr class="align-middle">
-                            <th scope="row" class="table-secondary">
-                                <h3>3</h3>
-                            </th>
-                            <td><h3 class="howTo">Split data into x (rainfall) and y (flood) variables and split into training and testing sets.</h3></td>
-                            <td class="text-center"><img src="img/table-icon.png" alt="Data Table" class="procedure-img"></td>
-                        </tr>
-
-                        <tr class="align-middle">
-                            <th scope="row" class="table-secondary">
-                                <h3>4</h3>
-                            </th> 
-                            <td><h3 class="howTo">Apply the SMOTE method to create synthetic data for training.</h3></td>
-                            <td class="text-center"><img src="img/balance-scale.png" alt="Balance Scale" class="procedure-img"></td>
-                        </tr>
-
-                        <tr class="align-middle">
-                            <th scope="row" class="table-secondary">
-                                <h3>5</h3>
-                            </th>
-                            <td><h3 class="howTo">Build, test, and evaluate Artificial Neural Network.</h3></td>
-                            <td class="text-center"><img src="img/ann-icon.png" alt="Artificial Neural Network" class="procedure-img"></td>
-                        </tr>
-
-                        <tr class="align-middle">
-                            <th scope="row" class="table-secondary">
-                                <h3>6</h3>
-                            </th>
-                            <td><h3 class="howTo">Build, test, and evaluate Logistic Regression Model. </h3></td>
-                            <td class="text-center"><img src="img/lr-icon.png" alt="Logistic Regression" class="procedure-img"></td>
-                        </tr>
-
-                        <tr class="align-middle">
-                            <th scope="row" class="table-secondary">
-                                <h3>7</h3>
-                            </th>
-                            <td><h3 class="howTo">Test model on real data from recent years to check efficacy.</h3></td>
-                            <td class="text-center"><img src="img/efficacy-icon.png" alt="Efficacy" class="procedure-img"></td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
+        </section>
+
+        <!-- Procedure Steps -->
+        <section class="body-bg">
+            <table class="table table-hover text-center table-light table-bordered border-dark-subtle table-margin">  
+                <thead>
+                    <tr class="table-primary">
+                        <th><h3>Step</h3></th>
+                        <th><h3>Description</h3></th>
+                        <th><h3>Image</h3></th>
+                    </tr>
+                </thead>
+
+                <tbody class="table-group-divider">
+                    <tr class="align-middle">
+                        <th scope="row" class="table-secondary">
+                            <h3>1</h3>
+                        </th> <!-- scope="row" specifies a row header cell -->
+                        <td><h3 class="howTo">Download dataset from Kaggle and python libraries into Google Colab.</h3></td>
+                        <td class="text-center"><img src="img/colab-icon.png" alt="Google Colab" class="procedure-img"></td>                           
+                    </tr>
+                    
+                    <tr class="align-middle">
+                        <th scope="row" class="table-secondary">
+                            <h3>2</h3>
+                        </th>
+                        <td><h3 class="howTo">Load data as CSV (comma separated value) from Excel and modify columns.</h3></td>
+                        <td class="text-center"><img src="img/excel-icon.png" alt="Microsoft Excel" class="procedure-img"></td>
+                    </tr>
+
+                    <tr class="align-middle">
+                        <th scope="row" class="table-secondary">
+                            <h3>3</h3>
+                        </th>
+                        <td><h3 class="howTo">Split data into x (rainfall) and y (flood) variables and split into training and testing sets.</h3></td>
+                        <td class="text-center"><img src="img/table-icon.png" alt="Data Table" class="procedure-img"></td>
+                    </tr>
+
+                    <tr class="align-middle">
+                        <th scope="row" class="table-secondary">
+                            <h3>4</h3>
+                        </th> 
+                        <td><h3 class="howTo">Apply the SMOTE method to balance data for training.</h3></td>
+                        <td class="text-center"><img src="img/balance-scale.png" alt="Balance Scale" class="procedure-img"></td>
+                    </tr>
+
+                    <tr class="align-middle">
+                        <th scope="row" class="table-secondary">
+                            <h3>5</h3>
+                        </th>
+                        <td><h3 class="howTo">Build, test, and evaluate Artificial Neural Network.</h3></td>
+                        <td class="text-center"><img src="img/ann-icon.png" alt="Artificial Neural Network" class="procedure-img"></td>
+                    </tr>
+
+                    <tr class="align-middle">
+                        <th scope="row" class="table-secondary">
+                            <h3>6</h3>
+                        </th>
+                        <td><h3 class="howTo">Build, test, and evaluate Logistic Regression Model. </h3></td>
+                        <td class="text-center"><img src="img/lr-icon.png" alt="Logistic Regression" class="procedure-img"></td>
+                    </tr>
+
+                    <tr class="align-middle">
+                        <th scope="row" class="table-secondary">
+                            <h3>7</h3>
+                        </th>
+                        <td><h3 class="howTo">Test model on real data from recent years to check efficacy.</h3></td>
+                        <td class="text-center"><img src="img/efficacy-icon.png" alt="Efficacy" class="procedure-img"></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <!-- Footer (require a Bootstrap icon)-->
@@ -132,7 +136,6 @@
                 </a>
             </div>
         </footer>
-        
     </div>
 </body>
 </html>
