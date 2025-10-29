@@ -96,3 +96,10 @@
     transform: scaleX(1);
     /*transform-origin: bottom left;*/
 }
+
+/* ID CSS */
+
+#chart-wrapper {
+    height: 400px;
+    width: auto;
+}
