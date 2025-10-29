@@ -15,50 +15,59 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
     <script src="js/results.js" defer></script>
 </head>
-<body>
-    <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
-            <!-- lg = large breakpoint, navbar-dark = make the text light -->
-             <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <img src="img/project-icon.png" alt="Logo" class="d-inline-block align-text-top w-25">
-                </a>
-                
-                <!-- Hamburger Menu Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button> 
+<body class="body">
+    <div class="container-lg">
+        <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
+                <!-- lg = large breakpoint, navbar-dark = make the text light -->
+                <div class="container">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/project-icon.png" alt="Logo" class="d-inline-block align-text-top w-25">
+                    </a>
+                    
+                    <!-- Hamburger Menu Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> 
 
-                <!-- Collapsible navbar menu with cusotm hover underline CSS animation -->
-                 <div class="collapse navbar-collapse" id="navmenu">
-                    <!-- Links to hamburger menu button -->
-                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="authors.html" class="nav-link hover-underline-animation nbMenuItem">Authors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="procedure.html" class="nav-link hover-underline-animation nbMenuItem">Procedure</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="results.html" class="nav-link hover-underline-animation nbMenuItem">Results</a>
-                        </li>
-                     </ul>
-                 </div>
+                    <!-- Collapsible navbar menu with cusotm hover underline CSS animation -->
+                    <div class="collapse navbar-collapse" id="navmenu">
+                        <!-- Links to hamburger menu button -->
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="authors.html" class="nav-link hover-underline-animation nbMenuItem">Authors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="procedure.html" class="nav-link hover-underline-animation nbMenuItem">Procedure</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="results.html" class="nav-link hover-underline-animation nbMenuItem">Results</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        <!-- Header -->
+        <section class="header">
+            <div class="container">
+                <br>
+                <h1 class="text-light text-center display-4">Results</h1>
+                <br>
             </div>
-        </nav>
-    
-    <!-- Graphs -->
-    <section>
-        <div class="container d-flex overflow-hidden bg-light rounded-4" id="chart-wrapper">
-            <canvas id="accuracyChart"></canvas>
-        </div>
-        <br><br>
-        <div class="container d-flex overflow-hidden bg-light rounded-4" id="chart-wrapper">
-            <canvas id="lossChart"></canvas>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer (require a Bootstrap icon)-->
+        <!-- Graphs -->
+        <section>
+            <div class="container d-flex overflow-hidden bg-light" id="chart-wrapper">
+                <canvas id="accuracyChart"></canvas>
+            </div>
+            <div class="container d-flex overflow-hidden bg-light" id="chart-wrapper">
+                <canvas id="lossChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Footer (require a Bootstrap icon)-->
         <footer class="p-5 footer text-light text-center position-relative">
             <div class="container">
                 <p class="lead">Copyright &copy; Raneesh Adulla Research Project</p>
@@ -67,6 +76,6 @@
                 </a>
             </div>
         </footer>
-    
+    </div>
 </body>
 </html>
