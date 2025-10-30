@@ -12,7 +12,7 @@ async function getData(){
     const table = data.split('\n').slice(1); // split by line and remove first row
     console.log(table);
 
-    table.forEach(row => {
+    table.forEach(row => { 
         const columns = row.split(',');
         const trial = parseInt(columns[0]);         // assign trial value
         xTrials.push(trial)                         // push trial numebr into array
